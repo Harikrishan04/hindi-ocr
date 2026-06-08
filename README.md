@@ -1,6 +1,9 @@
 # Hindi OCR & NLP Engine
 
-![Hindi OCR Demonstration](/home/hari/.gemini/antigravity/brain/61aaf3af-9eb3-4c00-a088-2f685379d669/hindi_ocr_demo_1780929303040.webp)
+
+
+https://github.com/user-attachments/assets/c9359941-dc02-4768-8074-80f671f3dd03
+
 
 A robust, production-ready web application for Optical Character Recognition (OCR) tailored specifically for Hindi text. This project integrates a fast C++ processing engine with Tesseract, coupled with a premium, accessible PHP-based UI that performs advanced NLP analysis on the extracted text.
 

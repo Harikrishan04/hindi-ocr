@@ -166,6 +166,7 @@ if (!empty($inputText)) {
 <meta name="theme-color" content="#0c0a09">
 <meta name="description" content="Optical Character Recognition and NLP analysis portal for Hindi text.">
 <title>Hindi OCR & NLP Analysis Portal</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📄</text></svg>">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

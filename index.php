@@ -65,7 +65,7 @@ $uploadedName = '';
 $uploadedB64  = '';
 $errorMsg     = '';
 
-if (isset($_POST['process']) && isset($_FILES['hindi_image'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['hindi_image'])) {
     try {
         if (!is_dir(UPLOAD_DIR)) mkdir(UPLOAD_DIR, 0755, true);
         

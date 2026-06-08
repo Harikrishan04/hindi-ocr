@@ -1,0 +1,20 @@
+# Runtime uploads and generated files
+uploads/*
+!uploads/.htaccess
+
+# Native build artifacts
+ocr_engine
+*.o
+*.a
+*.so
+
+# Editor/system files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Local environments
+.env
+.env.*
+.venv/

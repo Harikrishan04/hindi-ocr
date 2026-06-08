@@ -1,0 +1,8 @@
+.git
+.vscode
+Dockerfile
+.dockerignore
+uploads/*
+!uploads/.htaccess
+ocr_engine
+*.o

@@ -4,6 +4,7 @@ FROM php:8.2-apache
 RUN apt-get update && apt-get install -y \
     g++ \
     make \
+    pkg-config \
     tesseract-ocr \
     tesseract-ocr-hin \
     libtesseract-dev \

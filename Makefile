@@ -1,6 +1,6 @@
 CXX ?= g++
 CXXFLAGS ?= -std=c++17 -O2 -Wall -Wextra
-OCR_LIBS ?= -ltesseract -llept
+OCR_LIBS ?= $(shell pkg-config --libs tesseract lept 2>/dev/null || echo "-ltesseract -lleptonica")
 
 .PHONY: build test run clean
 

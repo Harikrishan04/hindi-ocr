@@ -8,18 +8,18 @@ A robust, production-ready web application for Optical Character Recognition (OC
 
 ```mermaid
 graph TD
-    A[Client Browser] -- 1. Image Upload --> B[PHP Web Layer]
-    B -- 2. Save temporary file --> C[(Uploads Directory)]
-    B -- 3. shell_exec() --> D[C++ ocr_engine]
-    B -- 7. Validate Spelling --> G[PHP NLP Module]
+    A[Client Browser] -->|1. Image Upload| B[PHP Web Layer]
+    B -->|2. Save temporary file| C[(Uploads Directory)]
+    B -->|3. shell_exec| D[C++ ocr_engine]
+    B -->|7. Validate Spelling| G[PHP NLP Module]
     
-    D -- 4. Image Processing --> E[Tesseract & Leptonica]
-    E -- 5. Load Models --> F[(hin.traineddata)]
+    D -->|4. Image Processing| E[Tesseract & Leptonica]
+    E -->|5. Load Models| F[(hin.traineddata)]
     
-    D -. 6. Return Extracted Text .-> B
-    G -- 8. Dictionary Lookup --> H[(dic.txt)]
+    D -.->|6. Return Extracted Text| B
+    G -->|8. Dictionary Lookup| H[(dic.txt)]
     
-    B -. 9. Render View & Export .-> A
+    B -.->|9. Render View & Export| A
 ```
 
 ## 🌟 Key Features

@@ -67,9 +67,12 @@ bool processImage(const string& imagePath, const string& tessdataPath) {
     
     // Initialize for Hindi 
     if (api->Init(tessdataPath.c_str(), "hin")) {
-        cerr << "Error: Could not initialize Tesseract (hin)." << endl;
-        delete api;
-        return false;
+        // Fallback to system default if local path fails (for Docker/Render)
+        if (api->Init(NULL, "hin")) {
+            cerr << "Error: Could not initialize Tesseract (hin)." << endl;
+            delete api;
+            return false;
+        }
     }
 
     Pix *image = pixRead(imagePath.c_str());
